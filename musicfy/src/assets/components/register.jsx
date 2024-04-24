@@ -1,6 +1,12 @@
-
+import { useNavigate } from "react-router-dom";
 
 const register = () => {
+
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+        navigate('/login');
+    }
   return (
     <section className="bg-gray-50 ">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -36,7 +42,7 @@ const register = () => {
                   </div>
                   <button type="submit" className="w-full text-white bg-[#60AB2E] hover:bg-[#A7E24C] focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Register</button>
                   <p className="text-sm font-light text-gray-500 ">
-                      Already have an account? <a href="#" className="font-medium text-primary-600 hover:underline">Login here</a>
+                      Already have an account? <a href="#" className="font-medium text-primary-600 hover:underline" onClick={handleLogin}>Login here</a>
                   </p>
               </form>
           </div>
