@@ -1,0 +1,107 @@
+/* Dashboard.css */
+
+h1{
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black; /* Cambia esto a tu color preferido */
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: green;
+    background-color: black;
+}
+
+.type{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    background-color: black;
+
+}
+
+.get-buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.search-button{
+    padding: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1ed760; /* Cambia esto a tu color preferido */
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1db954;
+}
+
+.searches{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.songs{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    border: solid 1px #282828;
+    border-radius: 4px ;
+    background-color: rgb(22, 21, 21);
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+}
+
+.result-item:hover{
+    background: rgb(65, 65, 65);
+}
+
+.result-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.result-item h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.result-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
